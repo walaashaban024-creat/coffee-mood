@@ -20,7 +20,7 @@ function App(){
     <BrowserRouter>
       <Navbar cartCount={cart.length}/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Home onAdd={addToCart} onFav={addToFav}/>}/>
         <Route path="/products" element={<Products onAdd={addToCart} onFav={addToFav}/>}/>
         <Route path="/product/:id" element={<ProductDetails onAdd={addToCart}/>}/>
         <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
