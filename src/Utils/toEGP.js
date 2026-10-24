@@ -1,0 +1,1 @@
+export default function toEGP(p){ return `${p} EGP`; }
